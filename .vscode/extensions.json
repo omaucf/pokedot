@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "antfu.iconify",
+    "anysphere.csharp",
+    "biomejs.biome",
+    "bradlc.vscode-tailwindcss",
+    "dohe.godot-format",
+    "editorconfig.editorconfig",
+    "geequlim.godot-tools",
+    "nuxt.mdc",
+    "vue.volar"
+  ]
+}

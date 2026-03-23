@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "isRoot": true,
+  "tools": {
+    "csharpier": {
+      "commands": ["csharpier"],
+      "version": "1.2.6"
+    }
+  }
+}

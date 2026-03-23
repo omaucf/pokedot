@@ -1,0 +1,41 @@
+{
+  "[csharp]": {
+    "editor.defaultFormatter": "anysphere.csharp"
+  },
+  "[gd,gdshader]": {
+    "editor.defaultFormatter": "DoHe.godot-format"
+  },
+  "csharp.semanticHighlighting.enabled": true,
+  "csharp.suppressHiddenDiagnostics": false,
+  "dotnet.formatting.organizeImportsOnFormat": true,
+  "dotnet.preferCSharpExtension": true,
+  "dotnetAcquisitionExtension.enableTelemetry": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  },
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.semanticHighlighting.enabled": true,
+  "editor.quickSuggestions": { "strings": "on" },
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.cs": "${capture}.cs.uid",
+    "*.gd": "${capture}.gd.uid",
+    "*.gdshader": "${capture}.gdshader.uid",
+    "*.png": "${capture}.png.import",
+    "*.svg": "${capture}.svg.import"
+  },
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.sln": "ini"
+  },
+  "godotFormatter.enabled": true,
+  "godotFormatter.enableLinter": true,
+  "godotFormatter.linterMaxLineLength": 200,
+  "tailwindCSS.classAttributes": ["class", "ui"],
+  "tailwindCSS.experimental.configFile": "docs/app/app.css",
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

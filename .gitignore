@@ -1,0 +1,45 @@
+# Godot
+.generated
+.godot
+.import
+
+# Outputs
+.nitro
+.nuxt
+.output
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Debug
+.pnpm-debug.log*
+*.log
+logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary
+__tmp__
+*.old
+
+# IDEs
+.idea
+.vs
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Misc
+.DS_Store
+*.pem
+
+# Development
+.turbo

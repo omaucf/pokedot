@@ -1,0 +1,32 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+indent_size = 2
+indent_style = space
+trim_trailing_whitespace = true
+
+[*.{md,mdc}]
+trim_trailing_whitespace = false
+
+[*.{tres,tscn}]
+trim_trailing_whitespace = false
+
+[Makefile]
+indent_style = tab
+
+[*.{csproj,sln}]
+indent_style = tab
+
+[*.cs]
+csharp_style_expression_bodied_methods = true:warning
+csharp_style_namespace_declarations = file_scoped:warning
+dotnet_analyzer_diagnostic.severity = warning
+dotnet_diagnostic.RS1022.severity = none
+dotnet_style_require_accessibility_modifiers = always:warning
+dotnet_style_qualification_for_field = false:suggestion
+
+[*.{gd,gdshader}]
+indent_style = tab

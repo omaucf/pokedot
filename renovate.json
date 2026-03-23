@@ -1,0 +1,49 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended", ":semanticCommits"],
+  "prHourlyLimit": 2,
+  "packageRules": [
+    {
+      "groupName": "Safe Dependencies",
+      "groupSlug": "safe-deps",
+      "matchPackagePatterns": ["*"],
+      "excludePackagePatterns": [
+        "^System\\.",
+        "^Godot",
+        "^Pokedot",
+        "dotnet-sdk"
+      ],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    },
+    {
+      "groupName": ".NET Ecosystem",
+      "groupSlug": "dotnet",
+      "matchPackagePatterns": ["^EnvironmentAbstractions\\.", "^System\\."],
+      "automerge": false
+    },
+    {
+      "groupName": "Godot",
+      "groupSlug": "godot",
+      "matchPackagePatterns": [
+        "^Godot",
+        "GodotSharp{/,}**",
+        "Godot.NET.Sdk{/,}**"
+      ],
+      "automerge": false
+    },
+    {
+      "groupName": "Pokedot",
+      "groupSlug": "pokedot",
+      "matchPackageNames": ["Pokedot{/,}**"],
+      "separateMajorMinor": false,
+      "allowedVersions": "/^(\\d+\\.\\d+\\.\\d+)(-godot(\\d+\\.)+\\d+(-.*)?)?$/",
+      "automerge": false
+    },
+    {
+      "matchPackageNames": ["dotnet-sdk"],
+      "allowedVersions": "<9",
+      "automerge": false
+    }
+  ]
+}

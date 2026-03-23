@@ -1,0 +1,48 @@
+<Project Sdk="Godot.NET.Sdk/4.6.1">
+	<PropertyGroup>
+		<!-- FRAMEWORK -->
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RootNamespace>Pokédot</RootNamespace>
+
+		<!-- RUNTIME -->
+		<EnableDynamicLoading>true</EnableDynamicLoading>
+		<LangVersion>preview</LangVersion>
+
+		<!-- META -->
+		<Title>Pokédot</Title>
+		<Version>0.1.0</Version>
+		<Description>...</Description>
+		<Copyright>© 2026 Pokédot</Copyright>
+		<Authors></Authors>
+		<Company></Company>
+
+		<!-- ANALYZER -->
+		<AnalysisLevel>latest</AnalysisLevel>
+		<EnableNETAnalyzers>true</EnableNETAnalyzers>
+
+		<!-- DEBUG -->
+		<DebugType>portable</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+
+		<!-- CODEGEN -->
+		<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+		<CompilerGeneratedFilesOutputPath>.generated</CompilerGeneratedFilesOutputPath>
+
+		<!-- REPORT -->
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+		<TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+		<WarningsAsErrors>CS9057</WarningsAsErrors>
+	</PropertyGroup>
+
+	<ItemGroup>
+    <PackageReference Include="EnvironmentAbstractions" Version="5.0.0" />
+    <PackageReference Include="GodotSharp.SourceGenerators" Version="2.6.0" />
+    <PackageReference Include="System.IO.Abstractions" Version="22.1.0" />
+  </ItemGroup>
+
+	<ItemGroup>
+    <AdditionalFiles Include="**/*.tscn" />
+  </ItemGroup>
+</Project>
